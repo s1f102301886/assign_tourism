@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/description_css/01.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Yuji+Mai&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-area">
+        <a href="../index.html" class="header-logo"><img src="../assets/img/logo.png" alt="イメージロゴ" class="header-logo-img"></a>
+        <div class="logo"></div>
+    
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="nav">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer_input" class="drawer_open">
+                <div class="rectangle top"></div>
+                <div class="rectangle bottom"></div>
+                <span class="menu_text">Menu</span>
+            </label>
+
+            <!-- メニュー -->
+            <nav class="nav_content">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="../appear.html">見た目で選ぶ</a></li>
+                <li class="nav_item"><a href="../place.html">場所で選ぶ</a></li>
+                <li class="nav_item"><a href="../term.html">開催時期から選ぶ</a></li>
+                <li class="nav_item"><a href="../index.html" class="Home-button">Home</a></li>
+            </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="main">
+        <section class="view-area">
+            <img class="view-background" src="../assets/img/07_shibuya2/1_ao.webp" alt="背景画像">
+            <div class="view-img-box">
+                <img src="../assets/img/07_shibuya2/1_ao.webp" alt="illumination-image" class="view-img">
+            </div>
+            <h1 class="desc_title">青の洞窟 SHIBUYA</h1>
+        </section>
+
+        <p class="view-catchcopy">青で満たされるひととき</p>
+        <p class="view-catchcopy-mini">青で満たされるひととき</p>
+
+        <div class="desc-menu">
+            <a href="#Weather" class="dm-item">Weather</a>
+            <p class="between-bar">|</p>
+            <a href="#Info" class="dm-item">Info</a>
+            <p class="between-bar">|</p>
+            <a href="#Map" class="dm-item">Map</a>
+            <p class="between-bar">|</p>
+            <a href="#Link" class="dm-item">Link</a>
+        </div>
+
+        <section class="gallary-area"></section>
+        <section class="temprature_area" id="Weather">
+            <h1 class="section-title"><span class="title-bar">| </span>Weather</h1>
+            <div class="temprature_box">
+                <div class="weather-container">
+                    <img id="weather-icon" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="天気アイコン" style="display: none;">
+                    <p id="temperature">気温: 読み込み中...</p>
+                    <p id="time">取得時間: 読み込み中...</p>
+                </div>
+            </div>
+        </section>
+        <section class="info-area" id="Info">
+            <h1 class="section-title"><span class="title-bar">| </span>Info</h1>
+            <table class="info-table">
+                <tbody>
+                    <tr>
+                        <th class="sub-title">⌚開催期間</th>
+                        <td class="table-content">2024年12月6日(金)～2024年12月25日(水)</td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">💡ライトアップ時間</th>
+                        <td class="table-content">15:00～22:00</td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">💰費用</th>
+                        <td class="table-content">入場無料</td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">🚆最寄駅</th>
+                        <td class="table-content">
+                            JR・京王電鉄・東京メトロ・東急渋谷駅
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">📍場所</th>
+                        <td class="table-content">東京都渋谷区代々木神園町、神南2丁目（渋谷公園通りから代々木公園ケヤキ並木）</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="map-area" id="Map">
+            <h1 class="section-title"><span class="title-bar">| </span>Map</h1>
+            <figure class="map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1TPJhbyJX6F7CebSESv_sseroW1_arZk&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </figure>
+        </section>
+        <hr>
+        <section class="official_link-area" id="Link">
+            <h1 class="section-title"><span class="title-bar">| </span>Link</h1>
+            <a href="https://shibuya-aonodokutsu.jp/" class="official_link" target="_blank" rel="noopener noreferrer">公式サイトはこちら<br><span>※外部サイトへリンクします</span></a>
+        </section>
+        <section class="recommandation-area"></section>
+    </div>
+    <footer class="fotter-area">
+        <div class="footer-logo-box">
+            <img src="../assets/img/logo.png" alt="イメージロゴ" class="footer-logo">
+        </div>
+        <small class="copyright">Copyright©s1f102301886. All Rights Reserved.</small>
+    </footer>
+    <a href="#" id="page-top">TOP</a>
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/07_shibuya2_api.js"></script>
+</body>
+</html>

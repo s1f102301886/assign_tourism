@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>見た目で選ぶ</title>
+    <link rel="stylesheet" href="./assets/css/appear.css">
+    <link rel="stylesheet" href="./assets/css/term.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Yuji+Mai&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-area">
+        <a href="./index.html" class="header-logo"><img src="./assets/img/logo.png" alt="イメージロゴ" class="header-logo-img"></a>
+        <div class="page-title">開催時期から選ぶ</div>
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="nav">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer_input" class="drawer_open">
+                <div class="rectangle top"></div>
+                <div class="rectangle bottom"></div>
+                <span class="menu_text">Menu</span>
+            </label>
+
+            <!-- メニュー -->
+            <nav class="nav_content">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="./appear.html">見た目で選ぶ</a></li>
+                <li class="nav_item"><a href="./place.html">場所で選ぶ</a></li>
+                <li class="nav_item"><a href="./term.html">開催時期から選ぶ</a></li>
+                <li class="nav_item"><a href="./index.html" class="Home-button">Home</a></li>
+            </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item"><a href="./appear.html">見た目で選ぶ</a></li>
+                <li class="sidebar-item"><a href="./place.html">場所で選ぶ</a></li>
+            </ul>
+        </div>
+        <section class="appear">
+            <div class="appear-area">
+                <nav class="three-block">
+                    <p class="jump-button">
+                        <a href="#December" class="jump-link">
+                            2024/12月
+                        </a>
+                    </p>
+                    <p class="jump-button">
+                        <a href="#January" class="jump-link">
+                            2025/1月
+                        </a>
+                    </p>
+                    <p class="jump-button">
+                        <a href="#Feburuary" class="jump-link">
+                            2025/2月
+                        </a>
+                    </p>
+                </nav>
+                <div class="month-section" id="December">
+                    <p class="month-title">2024年/12月</p>
+                    <a href="./description_html/03_minato.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info main-month-info">
+                                <p class="main-month-message">当月終了！</p>
+                                <h1 class="spot-title">Azabudai Hills Christmas Market 2024</h1>
+                                <p class="spot-ward">港区（麻布台ヒルズ 中央広場）</p>
+                                <p class="spot-term">2024年11月23日(土)～2024年12月25日(水)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/03_minato/1_azabudai.jpg" class="spot-img" alt="麻布台ヒルズクリスマスマーケット 2024の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/07_shibuya2.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info main-month-info">
+                                <p class="main-month-message">当月終了！</p>
+                                <h1 class="spot-title">青の洞窟 SHIBUYA</h1>
+                                <p class="spot-ward">渋谷区（渋谷公園通りから代々木公園ケヤキ並木）</p>
+                                <p class="spot-term">2024年12月6日(金)～2024年12月25日(水)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/07_shibuya2/1_ao.webp" class="spot-img" alt="青の洞窟の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/08_shinjuku.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info main-month-info">
+                                <p class="main-month-message">当月終了！</p>
+                                <h1 class="spot-title">東京クリスマスマーケット<br>in 明治神宮外苑</h1>
+                                <p class="spot-ward">新宿区（明治神宮外苑）</p>
+                                <p class="spot-term">2024年11月19日(火)〜2024年12月25日(水)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/08_shinjuku/1_meiji.png" class="spot-img" alt="東京クリスマスマーケット in 明治神宮外苑の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/02_chiyoda.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <h1 class="spot-title">Marunouchi Bright Holiday 2024</h1>
+                                <p class="spot-ward">千代田区（丸ビル、新丸ビル、丸の内オアゾ、ほか）</p>
+                                <p class="spot-term">2024年11月14日(木)～2025年1月13日(月)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/02_chiyoda/1_marunouch.jpg" class="spot-img" alt="Marunouchi Bright Holiday 2024の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/04_shinagawa.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <h1 class="spot-title">megurogawa MINNA no ILLUMI 2024</h1>
+                                <p class="spot-ward">品川区（目黒川周辺）</p>
+                                <p class="spot-term">2024年11月6日(水)～2025年2月14日(金)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/04_shinagawa/4_meguro.jpg" class="spot-img" alt="目黒川みんなのイルミネーション2024の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/06_shibuya1.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <h1 class="spot-title">恵比寿ガーデンプレイス　Baccarat ETERNAL LIGHTS ―歓びのかたち―</h1>
+                                <p class="spot-ward">渋谷区（恵比寿ガーデンプレイス）</p>
+                                <p class="spot-term">2024年11月9日(土)～2025年1月13日(月)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/06_shibuya1/1_ebisu.jpg" class="spot-img" alt="恵比寿ガーデンプレイス　Baccarat ETERNAL LIGHTS ―歓びのかたち―の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/01_chuo.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <h1 class="spot-title">TOKYO ILLUMILIA 2024</h1>
+                                <p class="spot-ward">中央区（さくら通り・八重洲仲通り周辺）</p>
+                                <p class="spot-term">2024年11月6日(水)～2025年2月14日(金)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/01_chuo/1_tokyo.jpg" class="spot-img" alt="TOKYO ILLUMILIA 2024の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/05_koto.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <h1 class="spot-title">有明ガーデン シーズンイルミネーション</h1>
+                                <p class="spot-ward">江東区（有明ガーデン）</p>
+                                <p class="spot-term">2024年10月25日(金)～2025年2月28日(金)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/05_koto/1_ariake.jpg" class="spot-img" alt="有明ガーデン シーズンイルミネーションの画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/09_toshima.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <h1 class="spot-title">池袋西口公園 extreme illumination 2024</h1>
+                                <p class="spot-ward">豊島区（池袋西口公園）</p>
+                                <p class="spot-term">2024年11月16日(土)～2025年2月28日(金)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/09_toshima/1_extreme.jpg" class="spot-img" alt="池袋西口公園 extremeイルミネーション2024の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                </div>
+
+                <div class="month-section" id="January">
+                    <p class="month-title">2025年/1月</p>
+                    <a href="./description_html/02_chiyoda.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <p class="main-month-message">当月終了！</p>
+                                <h1 class="spot-title">Marunouchi Bright Holiday 2024</h1>
+                                <p class="spot-ward">千代田区（丸ビル、新丸ビル、丸の内オアゾ、ほか）</p>
+                                <p class="spot-term">2024年11月14日(木)～2025年1月13日(月)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/02_chiyoda/1_marunouch.jpg" class="spot-img" alt="Marunouchi Bright Holiday 2024の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/04_shinagawa.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <p class="main-month-message">当月終了！</p>
+                                <h1 class="spot-title">megurogawa MINNA no ILLUMI 2024</h1>
+                                <p class="spot-ward">品川区（目黒川周辺）</p>
+                                <p class="spot-term">2024年11月6日(水)～2025年2月14日(金)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/04_shinagawa/4_meguro.jpg" class="spot-img" alt="目黒川みんなのイルミネーション2024の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/06_shibuya1.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <p class="main-month-message">当月終了！</p>
+                                <h1 class="spot-title">恵比寿ガーデンプレイス　Baccarat ETERNAL LIGHTS ―歓びのかたち―</h1>
+                                <p class="spot-ward">渋谷区（恵比寿ガーデンプレイス）</p>
+                                <p class="spot-term">2024年11月9日(土)～2025年1月13日(月)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/06_shibuya1/1_ebisu.jpg" class="spot-img" alt="恵比寿ガーデンプレイス　Baccarat ETERNAL LIGHTS ―歓びのかたち―の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/01_chuo.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <h1 class="spot-title">TOKYO ILLUMILIA 2024</h1>
+                                <p class="spot-ward">中央区（さくら通り・八重洲仲通り周辺）</p>
+                                <p class="spot-term">2024年11月6日(水)～2025年2月14日(金)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/01_chuo/1_tokyo.jpg" class="spot-img" alt="TOKYO ILLUMILIA 2024の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/05_koto.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <h1 class="spot-title">有明ガーデン シーズンイルミネーション</h1>
+                                <p class="spot-ward">江東区（有明ガーデン）</p>
+                                <p class="spot-term">2024年10月25日(金)～2025年2月28日(金)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/05_koto/1_ariake.jpg" class="spot-img" alt="有明ガーデン シーズンイルミネーションの画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/09_toshima.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <h1 class="spot-title">池袋西口公園 extreme illumination 2024</h1>
+                                <p class="spot-ward">豊島区（池袋西口公園）</p>
+                                <p class="spot-term">2024年11月16日(土)～2025年2月28日(金)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/09_toshima/1_extreme.jpg" class="spot-img" alt="池袋西口公園 extremeイルミネーション2024の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                </div>
+
+                <div class="month-section" id="Feburuary">
+                    <p class="month-title">2025年/2月</p>
+                    <a href="./description_html/01_chuo.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <p class="main-month-message">当月終了！</p>
+                                <h1 class="spot-title">TOKYO ILLUMILIA 2024</h1>
+                                <p class="spot-ward">中央区（さくら通り・八重洲仲通り周辺）</p>
+                                <p class="spot-term">2024年11月6日(水)～2025年2月14日(金)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/01_chuo/1_tokyo.jpg" class="spot-img" alt="TOKYO ILLUMILIA 2024の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/05_koto.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <p class="main-month-message">当月終了！</p>
+                                <h1 class="spot-title">有明ガーデン シーズンイルミネーション</h1>
+                                <p class="spot-ward">江東区（有明ガーデン）</p>
+                                <p class="spot-term">2024年10月25日(金)～2025年2月28日(金)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/05_koto/1_ariake.jpg" class="spot-img" alt="有明ガーデン シーズンイルミネーションの画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="./description_html/09_toshima.html" class="spot-area">
+                        <div class="spot-inline-box flex--reverse">
+                            <div class="spot-info">
+                                <p class="main-month-message">当月終了！</p>
+                                <h1 class="spot-title">池袋西口公園 extreme illumination 2024</h1>
+                                <p class="spot-ward">豊島区（池袋西口公園）</p>
+                                <p class="spot-term">2024年11月16日(土)～2025年2月28日(金)</p>
+                            </div>
+                            <div class="spot-img-box">
+                                <img src="./assets/img/09_toshima/1_extreme.jpg" class="spot-img" alt="池袋西口公園 extremeイルミネーション2024の画像">
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <footer class="fotter-area">
+        <div class="footer-logo-box">
+            <img src="./assets/img/logo.png" alt="イメージロゴ" class="footer-logo">
+        </div>
+        <small class="copyright">Copyright©s1f102301886. All Rights Reserved.</small>
+    </footer>
+    <a href="#" id="page-top">TOP</a>
+    <script src="./assets/js/menu.js"></script>
+</body>
+</html>

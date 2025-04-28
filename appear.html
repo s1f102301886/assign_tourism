@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>見た目で選ぶ</title>
+    <link rel="stylesheet" href="./assets/css/appear.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Yuji+Mai&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-area">
+        <a href="./index.html" class="header-logo"><img src="./assets/img/logo.png" alt="イメージロゴ" class="header-logo-img"></a>
+        <div class="page-title">見た目で選ぶ</div>
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="nav">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer_input" class="drawer_open">
+                <div class="rectangle top"></div>
+                <div class="rectangle bottom"></div>
+                <span class="menu_text">Menu</span>
+            </label>
+
+            <!-- メニュー -->
+            <nav class="nav_content">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="./appear.html">見た目で選ぶ</a></li>
+                <li class="nav_item"><a href="./place.html">場所で選ぶ</a></li>
+                <li class="nav_item"><a href="./term.html">開催時期から選ぶ</a></li>
+                <li class="nav_item"><a href="./index.html" class="Home-button">Home</a></li>
+            </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item"><a href="./place.html">場所で選ぶ</a></li>
+                <li class="sidebar-item"><a href="./term.html">開催時期から選ぶ</a></li>
+            </ul>
+        </div>
+        <section class="appear">
+            <div class="appear-area">
+                <div class="three-block">
+                    <a href="./description_html/01_chuo.html">
+                        <img src="./assets/img/01_chuo/1_tokyo.jpg" alt="東京イルミリアの画像" class="appear-item">
+                        <p class="desctipiton-item">TOKYO ILLUMILIA 2024</p>
+                    </a>
+                    <a href="./description_html/08_shinjuku.html">
+                        <img src="./assets/img/08_shinjuku/1_meiji.png" alt="明治神宮外苑クリスマスマーケットの画像" class="appear-item">
+                        <p class="desctipiton-item">東京クリスマスマーケット in 明治神宮外苑</p>
+                    </a>
+                    <a href="./description_html/04_shinagawa.html">
+                        <img src="./assets/img/04_shinagawa/4_meguro.jpg" alt="目黒川みんなのイルミネーション2024の画像" class="appear-item">
+                        <p class="desctipiton-item">megurogawa MINNA no ILLUMI 2024</p>
+                    </a>
+                </div>
+                <div class="three-block">
+                    <a href="./description_html/06_shibuya1.html">
+                        <img src="./assets/img/06_shibuya1/1_ebisu.jpg" alt="恵比寿ガーデンプレイ Baccarat ETERNAL LIGHTS ―歓びのかたち―の画像" class="appear-item">
+                        <p class="desctipiton-item">恵比寿ガーデンプレイス Baccarat ETERNAL LIGHTS<br>―歓びのかたち―</p>
+                    </a>
+                    <a href="./description_html/07_shibuya2.html">
+                        <img src="./assets/img/07_shibuya2/1_ao.webp" alt="青の洞窟 SHIBUYAの画像" class="appear-item">
+                        <p class="desctipiton-item">青の洞窟 SHIBUYA</p>
+                    </a>
+                    <a href="./description_html/03_minato.html">
+                        <img src="./assets/img/03_minato/1_azabudai.jpg" alt="麻布台クリスマスマーケットの画像" class="appear-item">
+                        <p class="desctipiton-item">Azabudai Hills Christmas Market 2024</p>
+                    </a>
+                </div>
+                <div class="three-block">
+                    <a href="./description_html/09_toshima.html">
+                        <img src="./assets/img/09_toshima/1_extreme.jpg" alt="池袋西口公園 extremeイルミネーション2024の画像" class="appear-item">
+                        <p class="desctipiton-item">池袋西口公園 extreme illumination 2024</p>
+                    </a>
+                    <a href="./description_html/02_chiyoda.html">
+                        <img src="./assets/img/02_chiyoda/1_marunouch.jpg" alt="Marunouchi Bright Holiday 2024の画像" class="appear-item">
+                        <p class="desctipiton-item">Marunouchi Bright Holiday 2024</p>
+                    </a>
+                    <a href="./description_html/05_koto.html">
+                        <img src="./assets/img/05_koto/1_ariake.jpg" alt="有明ガーデン シーズンイルミネーションの画像" class="appear-item">
+                        <p class="desctipiton-item">有明ガーデン シーズンイルミネーション</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="fotter-area">
+        <div class="footer-logo-box">
+            <img src="./assets/img/logo.png" alt="イメージロゴ" class="footer-logo">
+        </div>
+        <small class="copyright">Copyright©s1f102301886. All Rights Reserved.</small>
+    </footer>
+    <a href="#" id="page-top">TOP</a>
+    <script src="./assets/js/menu.js"></script>
+</body>
+</html>

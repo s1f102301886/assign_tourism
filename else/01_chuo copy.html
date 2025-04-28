@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/description_css/01_other.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+</head>
+<body>
+    <div class="header-area">
+        <a href="../index.html" class="header-logo"><img src="../assets/img/logo.png" alt="イメージロゴ" class="header-logo-img"></a>
+        <h1 class="desc_title">TOKYO ILLUMILIA 2024</h1>
+        <div class="logo"></div>
+    
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="nav">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer_input" class="drawer_open"><div class="rectangle"></div></label>
+
+            <!-- メニュー -->
+            <nav class="nav_content">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="../appear.html">見た目で選ぶ</a></li>
+                <li class="nav_item"><a href="../place.html">場所で選ぶ</a></li>
+                <li class="nav_item"><a href="../term.html">開催時期から選ぶ</a></li>
+                <li class="nav_item"><a href="../index.html" class="Home-button">Home</a></li>
+            </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="main">
+        <section class="temprature_area">
+            <div class="weather-container">
+                <img id="weather-icon" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="天気アイコン" style="display: none;">
+                <p id="temperature">気温: 読み込み中...</p>
+                <p id="time">取得時間: 読み込み中...</p>
+            </div>
+        </section>
+        <section class="view-area">
+            <div class="view-img-box">
+                <img src="../assets/img/01_chuo/1_tokyo.jpg" alt="illumination-image" class="view-img">
+                <p class="view-catchcopy">- 江戸の始まりの新開地を灯すイルミネーション -</p>
+            </div>
+        </section>
+        <section class="gallary-area"></section>
+        <section class="sns-area"></section>
+        <section class="info-area">
+            <table class="info-table">
+                <thead class="table-title-area">
+                    <tr>
+                        <th class="table-title" colspan="2">Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="sub-title">⌚開催期間</th>
+                        <td class="table-content">2024年11月6日(水)～2025年2月14日(金)</td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">💡ライトアップ時間</th>
+                        <td class="table-content">16:30～23:30</td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">💰費用</th>
+                        <td class="table-content">入場無料</td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">🚆最寄駅</th>
+                        <td class="table-content">
+                            JR「東京駅」<br>
+                            東京メトロ 銀座線・東西線「日本橋駅」<br>
+                            都営地下鉄 浅草線「日本橋駅」
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">📍場所</th>
+                        <td class="table-content">さくら通り（外堀通り～昭和通り）、八重洲仲通り</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="map-area">
+            <figure class="map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1SMFBy8lbSuWeMl8BBOkkvH3qtqxytLI&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </figure>
+        </section>
+        <section class="official_link-area">
+            <a href="https://tokyoillumilia.net/" class="official_link" target="_blank" rel="noopener noreferrer">公式サイトはこちら<br><span>※外部サイトへリンクします</span></a>
+        </section>
+        <section class="recommandation-area"></section>
+    </div>
+    <script src="../assets/js/01_chuo_api.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+body {
+    color: rgba(255, 255, 255, 0.900);
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: "Zen Old Mincho", serif;
+}
+
+/*
+header
+*/
+.header-area {
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo {
+    margin: 0;
+}
+.header-logo-img {
+    width: 80px;
+    height: 80px;
+}
+.header-title {
+    margin: auto 40px;
+    padding: 5px 10px;
+    border: rgba(255, 255, 255, 0.900) 1px solid;
+    font-size: 18px;
+}
+.rectangle {
+    margin: auto 40px;
+    width: 30px;
+    height: 15px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.4), -9px -9px 16px rgba(205, 210, 255, 0.1);
+    border-radius: 2px;
+}
+
+.rectangle:hover {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);    transform: scale(1.1);
+}
+
+
+/*
+main
+*/
+.main {
+    display: flex;
+}
+
+.sidebar {
+    width: 420px;
+    margin: 0 20px;
+}
+
+.sidebar-list {
+    top: 20px;
+    position: sticky;
+}
+
+.sidebar-item {
+    margin: 20px;
+    list-style: none;
+}
+
+.sidebar-item > a {
+    color: rgba(255, 255, 255, 0.900);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.sidebar-item > a:hover {
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* スムーズなアニメーション */
+}
+
+@media (max-width:768px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/*
+appear
+*/
+.appear {
+    display: flex;
+    width: 100%;
+}
+
+.appear-area {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.three-block {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.three-block > a {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box; /* パディングやボーダーを含める */
+    position: relative;
+}
+
+.three-block > a > img {
+    width: 100%;
+    height: 100%;
+    border: rgb(255, 255, 255) 3px solid;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    box-sizing: border-box; /* パディングやボーダーを含める */
+}
+
+.three-block > a > img:hover {
+    mix-blend-mode: overlay;
+}
+
+.desctipiton-item {
+    color: white;
+    margin: 0; /* 見出しのマージンを消しておく */
+    position: absolute; /* 絶対配置で画像の中央に配置 */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    mix-blend-mode: difference;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0; /* 透明にする */
+    visibility: hidden; /* 完全に非表示にする */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* スムーズなアニメーション */
+}
+.three-block > a:hover .desctipiton-item {
+    opacity: 1; /* 表示する */
+    visibility: visible; /* 表示可能にする */
+}
+
+@media (max-width:768px){
+    .appear-area {
+        width: 100%; /* 親要素を全幅に */
+    }
+    .three-block > a {
+        flex-basis: calc(100% / 3); /* 画面幅の1/3 */
+        height: calc(100vw / 3); /* 高さを幅に合わせて正方形 */
+    }
+}
+
+
+
+/* ハンバーガーメニューとページタイトルの切り替え */
+.nav {
+    display: none;
+}
+.page-title {
+    margin: auto 20px;
+    padding: 10px 16px;
+    border: rgba(255, 255, 255, 0.9) 1px solid;
+    font-size: 20px;
+}
+
+@media (max-width:768px) {
+    .nav {
+        display: block;
+    }
+    .page-title {
+        display: none;
+    }
+}

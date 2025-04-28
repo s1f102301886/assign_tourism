@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/description_css/01.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Yuji+Mai&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-area">
+        <a href="../index.html" class="header-logo"><img src="../assets/img/logo.png" alt="イメージロゴ" class="header-logo-img"></a>
+        <div class="logo"></div>
+    
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="nav">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer_input" class="drawer_open">
+                <div class="rectangle top"></div>
+                <div class="rectangle bottom"></div>
+                <span class="menu_text">Menu</span>
+            </label>
+
+            <!-- メニュー -->
+            <nav class="nav_content">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="../appear.html">見た目で選ぶ</a></li>
+                <li class="nav_item"><a href="../place.html">場所で選ぶ</a></li>
+                <li class="nav_item"><a href="../term.html">開催時期から選ぶ</a></li>
+                <li class="nav_item"><a href="../index.html" class="Home-button">Home</a></li>
+            </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="main">
+        <section class="view-area">
+            <img class="view-background" src="../assets/img/03_minato/1_azabudai.jpg" alt="背景画像">
+            <div class="view-img-box">
+                <img src="../assets/img/03_minato/1_azabudai.jpg" alt="illumination-image" class="view-img">
+            </div>
+            <h1 class="desc_title">Azabudai Hills<br> Christmas Market 2024</h1>
+        </section>
+
+        <p class="view-catchcopy">クリスマスの祝祭感あふれる空間</p>                        
+        <p class="view-catchcopy-mini">クリスマスの祝祭感あふれる空間</p>
+
+        <div class="desc-menu">
+            <a href="#Weather" class="dm-item">Weather</a>
+            <p class="between-bar">|</p>
+            <a href="#Info" class="dm-item">Info</a>
+            <p class="between-bar">|</p>
+            <a href="#Map" class="dm-item">Map</a>
+            <p class="between-bar">|</p>
+            <a href="#Link" class="dm-item">Link</a>
+        </div>
+
+        <section class="gallary-area"></section>
+        <section class="temprature_area" id="Weather">
+            <h1 class="section-title"><span class="title-bar">| </span>Weather</h1>
+            <div class="temprature_box">
+                <div class="weather-container">
+                    <img id="weather-icon" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="天気アイコン" style="display: none;">
+                    <p id="temperature">気温: 読み込み中...</p>
+                    <p id="time">取得時間: 読み込み中...</p>
+                </div>
+            </div>
+        </section>
+        <section class="info-area" id="Info">
+            <h1 class="section-title"><span class="title-bar">| </span>Info</h1>
+            <table class="info-table">
+                <tbody>
+                    <tr>
+                        <th class="sub-title">⌚開催期間</th>
+                        <td class="table-content">2024年11月23日(土)～2024年12月25日(水)</td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">💡ライトアップ時間</th>
+                        <td class="table-content">11:00～21:00</td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">💰費用</th>
+                        <td class="table-content">入場無料</td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">🚆最寄駅</th>
+                        <td class="table-content">
+                            東京メトロ南北線六本木一丁目駅 <br>
+                            東京メトロ日比谷線神谷町駅 <br>
+                            都営大江戸線六本木駅 <br>
+                            麻布十番駅
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">📍場所</th>
+                        <td class="table-content">東京都港区麻布台一丁目３番１号（麻布台ヒルズ 中央広場 Central Green）</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="map-area" id="Map">
+            <h1 class="section-title"><span class="title-bar">| </span>Map</h1>
+            <figure class="map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1GH4EGG5lzZM_f7njIYtGEP6m_bDHccs&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </figure>
+        </section>
+        <hr>
+        <section class="official_link-area" id="Link">
+            <h1 class="section-title"><span class="title-bar">| </span>Link</h1>
+            <a href="https://www.christmas.hills-site.com/illumination-event/azabudai/201/" class="official_link" target="_blank" rel="noopener noreferrer">公式サイトはこちら<br><span>※外部サイトへリンクします</span></a>
+        </section>
+        <section class="recommandation-area"></section>
+    </div>
+    <footer class="fotter-area">
+        <div class="footer-logo-box">
+            <img src="../assets/img/logo.png" alt="イメージロゴ" class="footer-logo">
+        </div>
+        <small class="copyright">Copyright©s1f102301886. All Rights Reserved.</small>
+    </footer>
+    <a href="#" id="page-top">TOP</a>
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/03_minato_api.js"></script>
+</body>
+</html>

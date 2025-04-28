@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/description_css/01.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Yuji+Mai&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-area">
+        <a href="../index.html" class="header-logo"><img src="../assets/img/logo.png" alt="イメージロゴ" class="header-logo-img"></a>
+        <div class="logo"></div>
+    
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="nav">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer_input" class="drawer_open">
+                <div class="rectangle top"></div>
+                <div class="rectangle bottom"></div>
+                <span class="menu_text">Menu</span>
+            </label>
+
+            <!-- メニュー -->
+            <nav class="nav_content">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="../appear.html">見た目で選ぶ</a></li>
+                <li class="nav_item"><a href="../place.html">場所で選ぶ</a></li>
+                <li class="nav_item"><a href="../term.html">開催時期から選ぶ</a></li>
+                <li class="nav_item"><a href="../index.html" class="Home-button">Home</a></li>
+            </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="main">
+        <section class="view-area">
+            <img class="view-background" src="../assets/img/05_koto/1_ariake.jpg" alt="背景画像">
+            <div class="view-img-box">
+                <img src="../assets/img/05_koto/1_ariake.jpg" alt="illumination-image" class="view-img">
+            </div>
+            <h1 class="desc_title_medium">有明ガーデン <br>シーズンイルミネーション</h1>
+        </section>
+
+        <p class="view-catchcopy">穏やかな光で明るく照らされた心安らぐ街並み</p>
+        <p class="view-catchcopy-mini">穏やかな光で明るく照らされた<br>心安らぐ街並み</p>
+
+        <div class="desc-menu">
+            <a href="#Weather" class="dm-item">Weather</a>
+            <p class="between-bar">|</p>
+            <a href="#Info" class="dm-item">Info</a>
+            <p class="between-bar">|</p>
+            <a href="#Map" class="dm-item">Map</a>
+            <p class="between-bar">|</p>
+            <a href="#Link" class="dm-item">Link</a>
+        </div>
+
+        <section class="gallary-area"></section>
+        <section class="temprature_area" id="Weather">
+            <h1 class="section-title"><span class="title-bar">| </span>Weather</h1>
+            <div class="temprature_box">
+                <div class="weather-container">
+                    <img id="weather-icon" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="天気アイコン" style="display: none;">
+                    <p id="temperature">気温: 読み込み中...</p>
+                    <p id="time">取得時間: 読み込み中...</p>
+                </div>
+            </div>
+        </section>
+        <section class="info-area" id="Info">
+            <h1 class="section-title"><span class="title-bar">| </span>Info</h1>
+            <table class="info-table">
+                <tbody>
+                    <tr>
+                        <th class="sub-title">⌚開催期間</th>
+                        <td class="table-content">2024年10月25日(金)～2025年2月28日(金)</td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">💡ライトアップ時間</th>
+                        <td class="table-content">
+                            2024年10月25日(金)～11月30日(土) 17:00～23:00 <br>
+                            12月1日(日)～2025年1月31日(金) 16:00～23:00 <br>
+                            2月1日(土)～28日(金) 17:00～23:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">💰費用</th>
+                        <td class="table-content">入場無料</td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">🚆最寄駅</th>
+                        <td class="table-content">
+                            ゆりかもめ有明駅 <br>
+                            ゆりかもめ有明テニスの森駅 <br>
+                            りんかい線国際展示場駅
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="sub-title">📍場所</th>
+                        <td class="table-content">東京都江東区有明2−1−8（有明ガーデン）</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="map-area" id="Map">
+            <h1 class="section-title"><span class="title-bar">| </span>Map</h1>
+            <figure class="map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1-zrNxObRk98l1ISBxf-Sj4xvsXp42OM&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            </figure>
+        </section>
+        <hr>
+        <section class="official_link-area" id="Link">
+            <h1 class="section-title"><span class="title-bar">| </span>Link</h1>
+            <a href="https://www.shopping-sumitomo-rd.com/ariake/event/detail/1649" class="official_link" target="_blank" rel="noopener noreferrer">公式サイトはこちら<br><span>※外部サイトへリンクします</span></a>
+        </section>
+        <section class="recommandation-area"></section>
+    </div>
+    <footer class="fotter-area">
+        <div class="footer-logo-box">
+            <img src="../assets/img/logo.png" alt="イメージロゴ" class="footer-logo">
+        </div>
+        <small class="copyright">Copyright©s1f102301886. All Rights Reserved.</small>
+    </footer>
+    <a href="#" id="page-top">TOP</a>
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/05_koto_api.js"></script>
+</body>
+</html>

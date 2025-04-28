@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/description_css/01_desc.css">
+</head>
+<body>
+    <div class="header-area">
+        <h1 class="desc_title">TOKYO ILLUMILIA 2024 (東京イルミリア2024)</h1>
+        <div class="rectangle" onclick="location.href='../index.html'"></div>
+    </div>
+
+    <div class="main">
+        <div class="main_left">
+            <div class="temprature_area">
+                <div class="weather-container">
+                    <img id="weather-icon" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="天気アイコン" style="display: none;">
+                    <p id="temperature">気温: 読み込み中...</p>
+                    <p id="time">取得時間: 読み込み中...</p>
+                </div>
+            </div>
+            <a href="https://tokyoillumilia.net/" class="official_link">公式サイトはこちら<br><span>※外部サイトへリンクします</span></a>
+        </div>
+        <div class="main_info">
+            <h2 class="info_title">📍所在</h2>
+            <p class="info_desc">中央区/八重洲・日本橋エリア</p>
+            <h2 class="info_title">🚆最寄駅</h2>
+            <p class="info_desc">
+                JR「東京駅」<br>
+                東京メトロ 銀座線・東西線「日本橋駅」<br>
+                都営地下鉄 浅草線「日本橋駅」
+            </p>
+            <h2 class="info_title">⌚開催期間</h2>
+            <p class="info_desc">2024年11月6日(水)～2025年2月14日(金)</p>
+            <h2 class="info_title">💰費用</h2>
+            <p class="info_desc">無料</p>
+        </div>
+    </div>
+    <script src="../assets/js/api.js"></script>
+</body>
+</html>
