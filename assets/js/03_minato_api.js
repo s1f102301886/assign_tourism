@@ -1,4 +1,3 @@
-const apiKey = "445b177922e6027ba1ed7b99ee4d7413"; // ここにOpenWeather APIキーを入力してください
 const lat = 35.660758; // ○○区の緯度
 const lon = 139.740944; // ○○区の経度
 
